@@ -15,6 +15,9 @@ public class Humain {
 		this.age = age;
 	}
 	public void details() {
-	    System.out.println(nom + " " + prenom + " " + age);
+	    System.out.println(toString());
+	}
+	public String toString() {
+		return nom + " " + prenom + " " + age;
 	}
 }
