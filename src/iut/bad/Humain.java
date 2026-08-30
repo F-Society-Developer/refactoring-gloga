@@ -1,5 +1,6 @@
 package iut.bad;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Humain implements Consommation {
