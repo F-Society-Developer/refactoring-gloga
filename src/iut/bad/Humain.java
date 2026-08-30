@@ -1,6 +1,9 @@
 package iut.bad;
 
+import java.util.List;
+
 public class Humain implements Consommation {
+	private List<Humain> amis = new ArrayList<>();
 	protected String nom;
 	protected String prenom;
 	protected int age;
@@ -24,4 +27,11 @@ public class Humain implements Consommation {
 	public void manger() { System.out.println(nom + " mange."); }
 	@Override
 	public void boire()  { System.out.println(nom + " boit."); }
+	
+	
+
+	public void ami(Humain autre) {
+	    this.amis.add(autre);
+	    autre.amis.add(this);
+	}
 }
