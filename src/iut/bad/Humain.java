@@ -31,7 +31,7 @@ public class Humain implements Consommation {
 	
 	
 
-	public void ami(Humain autre) {
+	public void ami(Humain autre, int duree) {
 	    this.amis.add(autre);
 	    autre.amis.add(this);
 	}
